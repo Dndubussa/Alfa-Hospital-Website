@@ -8,6 +8,7 @@ import Services from './pages/Services'
 import Doctors from './pages/Doctors'
 import Facilities from './pages/Facilities'
 import Contact from './pages/Contact'
+import DebugImages from './pages/DebugImages'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/debug-images" element={<DebugImages />} />
         </Routes>
       </main>
       <Footer />
