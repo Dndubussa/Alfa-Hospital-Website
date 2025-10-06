@@ -265,7 +265,7 @@ p {
 }
 
 .hero-slide-1 {
-    background-image: url('https://alfasphospitals.com/images/alfa-hospital-1.jpg');
+    background-image: url('images/alfa-hospital-1.jpg');
     background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
@@ -273,7 +273,7 @@ p {
 }
 
 .hero-slide-2 {
-    background-image: url('https://alfasphospitals.com/images/alfa-hospital-2.jpg');
+    background-image: url('images/alfa-hospital-2.jpg');
     background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
@@ -369,7 +369,7 @@ p {
 }
 
 .page-header-slide-1 {
-    background-image: url('https://alfasphospitals.com/images/alfa-hospital-1.jpg');
+    background-image: url('images/alfa-hospital-1.jpg');
     background-color: var(--primary-color);
     background-size: cover;
     background-position: center;
@@ -377,7 +377,7 @@ p {
 }
 
 .page-header-slide-2 {
-    background-image: url('https://alfasphospitals.com/images/alfa-hospital-2.jpg');
+    background-image: url('images/alfa-hospital-2.jpg');
     background-color: var(--primary-color);
     background-size: cover;
     background-position: center;

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Debug - Alfa Hospital</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        img { max-width: 200px; margin: 10px; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+        .info { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Image Loading Debug</h1>
+    
+    <div class="test">
+        <h2>Test 1: Relative Path</h2>
+        <img src="images/alfa-logo.png" alt="Logo Test" id="test1" 
+             onload="document.getElementById('status1').innerHTML='✅ SUCCESS: Image loaded'"
+             onerror="document.getElementById('status1').innerHTML='❌ ERROR: Image failed to load'">
+        <p id="status1" class="info">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>Test 2: Root Path</h2>
+        <img src="/images/alfa-logo.png" alt="Logo Test" id="test2"
+             onload="document.getElementById('status2').innerHTML='✅ SUCCESS: Image loaded'"
+             onerror="document.getElementById('status2').innerHTML='❌ ERROR: Image failed to load'">
+        <p id="status2" class="info">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>Test 3: Current Directory</h2>
+        <img src="./images/alfa-logo.png" alt="Logo Test" id="test3"
+             onload="document.getElementById('status3').innerHTML='✅ SUCCESS: Image loaded'"
+             onerror="document.getElementById('status3').innerHTML='❌ ERROR: Image failed to load'">
+        <p id="status3" class="info">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>Test 4: Doctor Image</h2>
+        <img src="images/doctor-patient-1.jpg" alt="Doctor Test" id="test4"
+             onload="document.getElementById('status4').innerHTML='✅ SUCCESS: Image loaded'"
+             onerror="document.getElementById('status4').innerHTML='❌ ERROR: Image failed to load'">
+        <p id="status4" class="info">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>Test 5: Insurance Logo</h2>
+        <img src="images/nhif-logo.png" alt="NHIF Test" id="test5"
+             onload="document.getElementById('status5').innerHTML='✅ SUCCESS: Image loaded'"
+             onerror="document.getElementById('status5').innerHTML='❌ ERROR: Image failed to load'">
+        <p id="status5" class="info">Loading...</p>
+    </div>
+    
+    <div class="test">
+        <h2>📊 Summary</h2>
+        <p>Check which tests show ✅ SUCCESS - that's the path format that works on Netlify.</p>
+        <p><a href="index.html">← Back to Main Site</a></p>
+    </div>
+    
+    <script>
+        // Additional debugging
+        setTimeout(() => {
+            console.log('Image loading test completed');
+            const images = document.querySelectorAll('img');
+            images.forEach((img, index) => {
+                console.log(`Image ${index + 1}:`, img.src, img.complete ? 'loaded' : 'failed');
+            });
+        }, 3000);
+    </script>
+</body>
+</html>
