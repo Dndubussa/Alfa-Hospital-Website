@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Facilities - Alfa Specialized Hospital</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/Our-favicon.ico">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="/images/alfa-logo.png" alt="Alfa Specialized Hospital Logo" class="logo-image">
+                    <span>Alfa Specialized Hospital</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="doctors.html" class="nav-link">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="facilities.html" class="nav-link active">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Facilities</h1>
+            <p>State-of-the-art medical facilities and equipment for your care</p>
+        </div>
+    </section>
+
+    <!-- Facilities Overview -->
+    <section class="facilities-overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Modern Healthcare Infrastructure</h2>
+                <p>We invest in the latest medical technology and facilities to provide the best possible care for our patients</p>
+            </div>
+            <div class="facilities-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="all">All Facilities</button>
+                    <button class="tab-btn" data-category="diagnostic">Diagnostic Centers</button>
+                    <button class="tab-btn" data-category="treatment">Treatment Units</button>
+                    <button class="tab-btn" data-category="emergency">Emergency Care</button>
+                    <button class="tab-btn" data-category="support">Support Services</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Grid -->
+    <section class="facilities-grid-section">
+        <div class="container">
+            <div class="facilities-grid">
+                <!-- Diagnostic Centers -->
+                <div class="facility-card" data-category="diagnostic">
+                    <div class="facility-image">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Radiology & Imaging Center</h3>
+                        <p class="facility-description">Advanced imaging services including X-ray, CT scan, MRI, and ultrasound with state-of-the-art equipment for accurate diagnosis.</p>
+                        <ul class="facility-features">
+                            <li>Digital X-ray machines</li>
+                            <li>64-slice CT scanner</li>
+                            <li>1.5T MRI machine</li>
+                            <li>3D/4D ultrasound</li>
+                            <li>Mammography unit</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card" data-category="diagnostic">
+                    <div class="facility-image">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Laboratory Services</h3>
+                        <p class="facility-description">Fully equipped modern laboratory providing comprehensive diagnostic testing with quick and accurate results.</p>
+                        <ul class="facility-features">
+                            <li>Automated analyzers</li>
+                            <li>Microbiology lab</li>
+                            <li>Blood bank services</li>
+                            <li>Molecular diagnostics</li>
+                            <li>24-hour emergency testing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Treatment Units -->
+                <div class="facility-card" data-category="treatment">
+                    <div class="facility-image">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Cardiology Unit</h3>
+                        <p class="facility-description">Comprehensive cardiac care facility with advanced diagnostic and treatment capabilities for heart conditions.</p>
+                        <ul class="facility-features">
+                            <li>ECG machines</li>
+                            <li>Echocardiography</li>
+                            <li>Stress testing equipment</li>
+                            <li>Cardiac catheterization lab</li>
+                            <li>Cardiac rehabilitation center</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card" data-category="treatment">
+                    <div class="facility-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Neurology Department</h3>
+                        <p class="facility-description">Specialized neurology facility equipped with advanced diagnostic tools for neurological disorders.</p>
+                        <ul class="facility-features">
+                            <li>EEG machines</li>
+                            <li>EMG equipment</li>
+                            <li>Neurological examination rooms</li>
+                            <li>Stroke care unit</li>
+                            <li>Neuro-rehabilitation center</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card" data-category="treatment">
+                    <div class="facility-image">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Orthopedic Center</h3>
+                        <p class="facility-description">Modern orthopedic facility with advanced surgical equipment and rehabilitation services.</p>
+                        <ul class="facility-features">
+                            <li>Arthroscopic surgery equipment</li>
+                            <li>Joint replacement facilities</li>
+                            <li>Physical therapy gym</li>
+                            <li>Orthopedic consultation rooms</li>
+                            <li>Sports medicine center</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Emergency Care -->
+                <div class="facility-card" data-category="emergency">
+                    <div class="facility-image">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Emergency Department</h3>
+                        <p class="facility-description">24/7 emergency care facility equipped to handle all types of medical emergencies with rapid response capabilities.</p>
+                        <ul class="facility-features">
+                            <li>Emergency triage area</li>
+                            <li>Trauma rooms</li>
+                            <li>Emergency surgery suite</li>
+                            <li>Ambulance services</li>
+                            <li>Emergency pharmacy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card" data-category="emergency">
+                    <div class="facility-image">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Intensive Care Unit (ICU)</h3>
+                        <p class="facility-description">Advanced intensive care facility with round-the-clock monitoring and life support equipment.</p>
+                        <ul class="facility-features">
+                            <li>Ventilators</li>
+                            <li>Patient monitoring systems</li>
+                            <li>Isolation rooms</li>
+                            <li>Critical care nursing station</li>
+                            <li>Family waiting area</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Support Services -->
+                <div class="facility-card" data-category="support">
+                    <div class="facility-image">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Pharmacy</h3>
+                        <p class="facility-description">Full-service pharmacy providing medications and pharmaceutical services to patients and visitors.</p>
+                        <ul class="facility-features">
+                            <li>Prescription medications</li>
+                            <li>Over-the-counter drugs</li>
+                            <li>Pharmaceutical consultation</li>
+                            <li>Medication counseling</li>
+                            <li>24/7 emergency pharmacy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="facility-card" data-category="support">
+                    <div class="facility-image">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <div class="facility-info">
+                        <h3>Rehabilitation Center</h3>
+                        <p class="facility-description">Comprehensive rehabilitation facility offering physical, occupational, and speech therapy services.</p>
+                        <ul class="facility-features">
+                            <li>Physical therapy gym</li>
+                            <li>Occupational therapy rooms</li>
+                            <li>Speech therapy facilities</li>
+                            <li>Hydrotherapy pool</li>
+                            <li>Rehabilitation equipment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology & Equipment -->
+    <section class="technology-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Advanced Medical Technology</h2>
+                <p>We utilize cutting-edge medical technology to ensure accurate diagnosis and effective treatment</p>
+            </div>
+            <div class="technology-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Advanced Diagnostics</h3>
+                    <p>State-of-the-art diagnostic equipment for accurate and timely medical assessments.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Minimally Invasive Surgery</h3>
+                    <p>Advanced surgical equipment for minimally invasive procedures with faster recovery times.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <h3>Digital Health Records</h3>
+                    <p>Electronic medical records system for efficient patient care and information management.</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3>Infection Control</h3>
+                    <p>Advanced sterilization and infection control systems to ensure patient safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Comfort -->
+    <section class="comfort-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Patient Comfort & Amenities</h2>
+                <p>We prioritize patient comfort and provide modern amenities for a better healthcare experience</p>
+            </div>
+            <div class="comfort-grid">
+                <div class="comfort-item">
+                    <div class="comfort-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Modern Patient Rooms</h3>
+                    <p>Comfortable, well-equipped patient rooms with modern amenities and 24/7 nursing care.</p>
+                </div>
+                <div class="comfort-item">
+                    <div class="comfort-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free Wi-Fi</h3>
+                    <p>High-speed internet access throughout the hospital for patients and visitors.</p>
+                </div>
+                <div class="comfort-item">
+                    <div class="comfort-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Convenient and secure parking facilities for patients and visitors.</p>
+                </div>
+                <div class="comfort-item">
+                    <div class="comfort-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Cafeteria</h3>
+                    <p>Clean and hygienic cafeteria serving nutritious meals for patients and visitors.</p>
+                </div>
+                <div class="comfort-item">
+                    <div class="comfort-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Garden Areas</h3>
+                    <p>Peaceful garden areas for patients and families to relax and recuperate.</p>
+                </div>
+                <div class="comfort-item">
+                    <div class="comfort-icon">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <h3>Accessibility</h3>
+                    <p>Fully accessible facilities designed to accommodate patients with special needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience Our Modern Facilities</h2>
+                <p>Visit our hospital to see our state-of-the-art facilities and meet our medical team.</p>
+                <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/images/alfa-logo.png" alt="Alfa Specialized Hospital Logo" class="logo-image">
+                        <span>Alfa Specialized Hospital</span>
+                    </div>
+                    <p>For a Healthy Nation</p>
+                    <p>Providing world-class healthcare services with compassion, excellence, and innovation.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Mikocheni Tanesco, Mwai Kibaki Road, Dar es Salaam, Tanzania</p>
+                        <p><i class="fas fa-phone"></i> +255674404013</p>
+                        <p><i class="fas fa-envelope"></i> info@alfasphospitals.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <div class="hours">
+                        <p><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 6:00 PM</p>
+                        <p><strong>Sunday:</strong> 9:00 AM - 4:00 PM</p>
+                        <p><strong>Emergency:</strong> 24/7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Alfa Specialized Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="facilities.js"></script>
+</body>
+</html>

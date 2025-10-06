@@ -1,0 +1,52 @@
+<!-- Google Analytics 4 Tracking Code -->
+<!-- Replace GA_MEASUREMENT_ID with your actual Google Analytics 4 Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'GA_MEASUREMENT_ID', {
+    page_title: document.title,
+    page_location: window.location.href,
+    custom_map: {
+      'custom_parameter_1': 'hospital_name',
+      'custom_parameter_2': 'location'
+    }
+  });
+  
+  // Track form submissions
+  document.addEventListener('DOMContentLoaded', function() {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+      form.addEventListener('submit', function() {
+        gtag('event', 'form_submit', {
+          'event_category': 'engagement',
+          'event_label': form.id || 'contact_form'
+        });
+      });
+    });
+    
+    // Track phone number clicks
+    const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+    phoneLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        gtag('event', 'phone_click', {
+          'event_category': 'engagement',
+          'event_label': 'phone_number'
+        });
+      });
+    });
+    
+    // Track appointment booking clicks
+    const appointmentLinks = document.querySelectorAll('a[href*="contact"], a[href*="appointment"]');
+    appointmentLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        gtag('event', 'appointment_click', {
+          'event_category': 'engagement',
+          'event_label': 'appointment_booking'
+        });
+      });
+    });
+  });
+</script>
