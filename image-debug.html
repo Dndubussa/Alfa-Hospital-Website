@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Loading Test - Alfa Hospital</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        img { max-width: 200px; margin: 10px; border: 1px solid #ddd; }
+        .working { color: green; font-weight: bold; }
+        .not-working { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Alfa Hospital - Image Loading Test</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Relative Paths</h2>
+        <img src="images/alfa-logo.png" alt="Logo Test 1" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="images/doctor-patient-1.jpg" alt="Doctor Test 1" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="images/nhif-logo.png" alt="NHIF Test 1" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Root Paths</h2>
+        <img src="/images/alfa-logo.png" alt="Logo Test 2" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="/images/doctor-patient-1.jpg" alt="Doctor Test 2" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="/images/nhif-logo.png" alt="NHIF Test 2" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Absolute URLs</h2>
+        <img src="https://alfasphospitals.com/images/alfa-logo.png" alt="Logo Test 3" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="https://alfasphospitals.com/images/doctor-patient-1.jpg" alt="Doctor Test 3" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="https://alfasphospitals.com/images/nhif-logo.png" alt="NHIF Test 3" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 4: Current Domain URLs</h2>
+        <img src="./images/alfa-logo.png" alt="Logo Test 4" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="./images/doctor-patient-1.jpg" alt="Doctor Test 4" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+        <img src="./images/nhif-logo.png" alt="NHIF Test 4" onload="this.style.border='2px solid green'" onerror="this.style.border='2px solid red'">
+    </div>
+    
+    <p><strong>Instructions:</strong> Green borders = working, Red borders = not working</p>
+    <p>Visit this page after deployment to see which path format works on Netlify.</p>
+</body>
+</html>
