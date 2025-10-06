@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Hospital - Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: linear-gradient(135deg, #166534, #22c55e);
+            color: white;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+        }
+        h1 { font-size: 3rem; margin-bottom: 20px; }
+        p { font-size: 1.2rem; margin-bottom: 20px; }
+        .test-image {
+            max-width: 200px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .status {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Alfa Specialized Hospital</h1>
+        <p><strong>Test Page - Deployment Working!</strong></p>
+        
+        <div class="status">
+            <h2>✅ Deployment Status</h2>
+            <p>If you can see this page, your Netlify deployment is working correctly!</p>
+        </div>
+        
+        <div class="status">
+            <h2>🖼️ Image Test</h2>
+            <p>Testing image loading:</p>
+            <img src="https://alfasphospitals.com/images/alfa-logo.png" alt="Alfa Logo" class="test-image" 
+                 onload="this.style.border='3px solid #22c55e'" 
+                 onerror="this.style.border='3px solid #ef4444'">
+            <p id="image-status">Loading image...</p>
+        </div>
+        
+        <div class="status">
+            <h2>🔗 Navigation</h2>
+            <p><a href="index.html" style="color: #22c55e; text-decoration: none; font-weight: bold;">→ Go to Main Website</a></p>
+            <p><a href="image-debug.html" style="color: #22c55e; text-decoration: none; font-weight: bold;">→ Image Debug Page</a></p>
+        </div>
+        
+        <div class="status">
+            <h2>📞 Contact Information</h2>
+            <p><strong>Emergency:</strong> +255674404013</p>
+            <p><strong>Location:</strong> MikocheniTanesco, Mwai Kibaki Rd, Dar es Salaam</p>
+        </div>
+    </div>
+    
+    <script>
+        // Update image status
+        const img = document.querySelector('.test-image');
+        img.onload = function() {
+            document.getElementById('image-status').innerHTML = '✅ Logo loaded successfully!';
+            document.getElementById('image-status').style.color = '#22c55e';
+        };
+        img.onerror = function() {
+            document.getElementById('image-status').innerHTML = '❌ Logo failed to load';
+            document.getElementById('image-status').style.color = '#ef4444';
+        };
+    </script>
+</body>
+</html>
